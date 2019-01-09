@@ -1,6 +1,6 @@
 def turn_count(board)
-  turn = 0
-  board.each do |payer|
-    puts "X"
-    turn += 1
+  index = 0
+  board.each do |turn|
+    puts "#{turn}"
+    index += 1
 end

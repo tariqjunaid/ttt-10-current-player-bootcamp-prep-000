@@ -1,6 +1,9 @@
 def turn_count(board)
-  index = 0
-  board.each do |turn|
-    puts "#{turn}"
-    index += 1
+  turns = 0
+  board.each do |index|
+    if index == "X" || index == "O"
+      turns += 1
+    end
+    return turns
+  end
 end
